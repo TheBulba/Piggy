@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://d04iqafjmckji"]
+
+[ext_resource type="PackedScene" uid="uid://7gdhdiupufyh" path="res://pig.tscn" id="1_kbxeh"]
+[ext_resource type="Script" path="res://world.gd" id="1_w0ar3"]
+[ext_resource type="PackedScene" uid="uid://babnx5kmqlbnd" path="res://Apple.tscn" id="2_aa8si"]
+
+[node name="World" type="Node"]
+script = ExtResource("1_w0ar3")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Pig" parent="." instance=ExtResource("1_kbxeh")]
+position = Vector2(19, 170)
+
+[node name="Apple" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(109, 165)
+
+[node name="Apple2" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(239, 134)
+
+[node name="Apple3" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(86, 91)
+
+[node name="Apple6" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(172, 19)
+
+[node name="Apple7" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(174, 83)
+
+[node name="Apple4" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(44, 16)
+
+[node name="Apple5" parent="." instance=ExtResource("2_aa8si")]
+position = Vector2(276, 41)
